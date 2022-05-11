@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
@@ -105,7 +104,7 @@ class _HomeState extends State<Home> {
                 euro = snapshot.data!["results"]["currencies"]["EUR"]["buy"];
 
                 return SingleChildScrollView(
-                  padding: EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
@@ -147,7 +146,7 @@ Widget buildTextField(
       color: Colors.amber,
       fontSize: 25,
     ),
-    onChanged: f,
+    onChanged: (f){f;},
     keyboardType: TextInputType.number,
   );
 }
