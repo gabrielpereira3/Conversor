@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.conversor.gabriel.conversor_de_moedas">
    <application
-        android:label="conversor_de_moedas"
+        android:label="Conversor de Moedas"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
