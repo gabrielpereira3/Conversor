@@ -171,6 +171,6 @@ Widget buildTextField(
     onChanged: (value) {
       f(value);
     },
-    keyboardType: TextInputType.number,
+    keyboardType: const TextInputType.numberWithOptions(decimal: true),
   );
 }
